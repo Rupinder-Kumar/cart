@@ -10,12 +10,7 @@ export const fetchCartItems = () => ({
 export const fetchCartItemsSuccess = items => ({
     type: CartActionTypes.FETCH_CART_ITEMS_SUCCESS,
     payload: items
-})
-
-export const setCartLoading = loading => ({
-    type: CartActionTypes.SET_CART_LOADING,
-    payload: loading
-})
+});
 
 export const toggleCartHidden = () => ({
     type: CartActionTypes.TOGGLE_CART_HIDDEN
@@ -38,7 +33,6 @@ export const clearItemFromCart = item => ({
 
 export const fetchCartItemsAsync = () => dispatch => {
     dispatch(fetchCartItems());
-    dispatch(setCartLoading(true));
     axios.get(cart.items).then(resp => {
         dispatch(fetchCartItemsSuccess(transformInitialDataForCart(resp.data.products)))
     }).catch(error => console.log(error.message))
