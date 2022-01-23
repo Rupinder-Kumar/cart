@@ -10,14 +10,15 @@ const CartItem = ({cartItem}) => {
     return (
     <CartItemContainer>
         <ProducImageContainer>
-            <ProductIcon/>
-        </ProducImageContainer>
+            <ProductIcon height="50px" />
 
-        <ProductDescritionContainer>
+            <ProductDescritionContainer>
             <ProductName>{title}</ProductName>
             <ProductDescription>{desc}</ProductDescription>
         </ProductDescritionContainer>
+        </ProducImageContainer>
 
+       
         <ProductQuantityContainer>
                 <IncrementDecrementIcon onClick={() => dispatch(removeItem(cartItem))}>-</IncrementDecrementIcon>
                 <ProductQuantity>{quantity}</ProductQuantity>

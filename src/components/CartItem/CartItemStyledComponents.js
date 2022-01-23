@@ -15,7 +15,7 @@ export const CartItemContainer = styled.div`
 export const ProducImageContainer = styled.div`
     display: flex;
     justify-content: center;
-    width: 5%;
+    align-items: center;
 
     svg {
         fill: #345463;
