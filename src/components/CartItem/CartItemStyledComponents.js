@@ -12,7 +12,7 @@ export const CartItemContainer = styled.div`
     user-select: none;
 `;
 
-export const ProducImageContainer = styled.div`
+export const ProductContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,12 +30,15 @@ export const ProductDescritionContainer = styled.div`
     padding: 0 20px;
 `;
 
-export const ProductName = styled.div`
+export const ProductName = styled.h4`
     color: #345463;
     margin-bottom: 2px;
+    margin-top: 0;
+    font-weight: normal;
 `;
-export const ProductDescription = styled.div`
+export const ProductDescription = styled.p`
     opacity: 0.7;
+    margin: 0;
 `;
 
 export const ProductQuantityContainer = styled.div`
@@ -47,6 +50,10 @@ export const ProductQuantityContainer = styled.div`
 
 export const IncrementDecrementIcon = styled.div`
     font-size: 36px;
+    outline: none;
+    border: none;
+    color: #345463;
+    background-color: transparent;
     opacity: 0.7;
     padding: 10px;
     cursor: pointer;
@@ -61,7 +68,7 @@ export const ProductQuantity = styled.div`
     opacity: 0.7;
 `;
 
-export const ProductPrice = styled.div`
+export const ProductPrice = styled.h4`
     display: flex;
     align-items: center;
     font-weight: bold;

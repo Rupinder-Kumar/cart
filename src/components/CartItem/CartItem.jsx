@@ -1,5 +1,5 @@
 import React from "react";
-import { CartItemContainer, ProducImageContainer, ProductDescritionContainer, ProductName, ProductDescription, ProductQuantityContainer, IncrementDecrementIcon, ProductQuantity, ProductPrice } from "./CartItemStyledComponents";
+import { CartItemContainer, ProductContainer, ProductDescritionContainer, ProductName, ProductDescription, ProductQuantityContainer, IncrementDecrementIcon, ProductQuantity, ProductPrice } from "./CartItemStyledComponents";
 import { ReactComponent as ProductIcon } from "../../assets/icons/product.svg"
 import { addItem, removeItem } from "../../redux/cart/cart.actions";
 import { useDispatch} from "react-redux";
@@ -9,14 +9,15 @@ const CartItem = ({cartItem}) => {
     const {currency, desc, price, quantity, title} = cartItem;
     return (
     <CartItemContainer>
-        <ProducImageContainer>
+        <ProductContainer>
             <ProductIcon height="50px" />
-
+            
             <ProductDescritionContainer>
-            <ProductName>{title}</ProductName>
-            <ProductDescription>{desc}</ProductDescription>
-        </ProductDescritionContainer>
-        </ProducImageContainer>
+              <ProductName>{title}</ProductName>
+                <ProductDescription>{desc}</ProductDescription>
+            </ProductDescritionContainer>
+
+        </ProductContainer>
 
        
         <ProductQuantityContainer>

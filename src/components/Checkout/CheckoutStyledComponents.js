@@ -5,6 +5,7 @@ export const CheckoutContainer = styled.div`
     flex-direction: column;
     padding: 50px 0;
     margin 0 50px;
+    overflow-y: auto;
 `;
 
 export const EmptyCart = styled.div`

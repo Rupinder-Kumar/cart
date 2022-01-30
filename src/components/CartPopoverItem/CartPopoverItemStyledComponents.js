@@ -20,7 +20,7 @@ export const CartPopoverItemContainer = styled.div`
     }
 `
 
-export const CrossIcon = styled.div`
+export const CrossIcon = styled.i`
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -29,6 +29,7 @@ export const CrossIcon = styled.div`
     padding: 0 10px;
     margin: 0 5px;
     cursor: pointer;
+    font-style: normal;
 `
 
 export const ProductDescriptionContainer = styled.div`
@@ -41,14 +42,14 @@ export const ProductDescription = styled.div`
     flex-direction: column;
 `;
 
-export const ProductTitle = styled.div`
+export const ProductTitle = styled.span`
     color: #436371;
 `;
-export const ProductPrice = styled.div`
+export const ProductPrice = styled.span`
     color: #3c5c6a;
     font-weight: bold;
 `;
-export const ProductQuantity = styled.div`
+export const ProductQuantity = styled.span`
     font-size: 12px;
     color: #3c5c6a;
 `;

@@ -5,11 +5,11 @@ export const CartContainer = styled.div`
   flex-direction: column;
 `
 
-export const CartAmount = styled.div`
+export const CartAmount = styled.span`
   font-size: 16px;
 `
 
-export const CartItemCount = styled.div`
+export const CartItemCount = styled.span`
 display: flex;
 font-size: 13px;
 cursor: pointer;
@@ -26,8 +26,9 @@ export const CartIconContainer = styled.div`
   }
 `;
 
-export const TriangleDown = styled.div`
+export const TriangleDown = styled.i`
   padding-left: 3px;
   font-size: 24px;
   line-height: 12px;
+  font-style: normal;
 `
